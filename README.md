@@ -18,6 +18,11 @@ View all the examples in [here](./_examples/)
 
 Let's create a simple button with the Gruvbox theme.
 
+![Button - Gruvbox Theme](./assets/button_gruvbox.png)
+
+<details>
+<summary>View the code</summary>
+
 ```go
 func main() {
     // Create a new glitter UI and select a theme
@@ -30,8 +35,7 @@ func main() {
     fmt.Println(btn)
 }
 ```
-
-![Button - Gruvbox Theme](./assets/button_gruvbox.png)
+</details>
 
 ### Banner
 
@@ -39,6 +43,9 @@ Now let's use a few different components together
 to make a tutorial screen.
 
 ![Banner](./assets/banner.png)
+
+<details>
+<summary>View the code</summary>
 
 ```go
 func main() {
@@ -60,4 +67,5 @@ func main() {
 	fmt.Println(prefix.String(), prompt.String())
 }
 ```
+</details>
 
