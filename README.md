@@ -16,36 +16,26 @@ View all the examples in [here](./_examples/)
 
 ### Button
 
-Let's create a simple button with the Gruvbox theme.
-
-![Button - Gruvbox Theme](./assets/button_gruvbox.png)
-
-<details>
-<summary>View the code</summary>
+Let's create a simple button with the Monokai theme that has 
+a purple background and black text.
 
 ```go
 func main() {
     // Create a new glitter UI and select a theme
-    ui := glitter.NewUI(theme.Gruvbox)
+    ui := glitter.NewUI(theme.Monokai)
     
     // Create a button and mark it as active
-    btn := ui.Button("hello there", true)
+    btn := ui.Button("hello there", glitter.Info)
     
     // Render the button!
     fmt.Println(btn)
 }
 ```
-</details>
 
 ### Banner
 
 Now let's use a few different components together
-to make a tutorial screen.
-
-![Banner](./assets/banner.png)
-
-<details>
-<summary>View the code</summary>
+to make a tutorial screen using the Gruvbox theme.
 
 ```go
 func main() {
@@ -67,5 +57,3 @@ func main() {
 	fmt.Println(prefix.String(), prompt.String())
 }
 ```
-</details>
-

@@ -4,26 +4,32 @@ import (
 	"github.com/charmbracelet/lipgloss"
 )
 
-func (ui *UI) Button(body string, active bool) string {
-	if active {
-		return ui.buttonActive().Render(body)
+type ButtonStyle int
+
+const (
+	Info ButtonStyle = iota
+	Warn
+	Error
+	Success
+)
+
+func (ui *UI) Button(body string, style ButtonStyle) lipgloss.Style {
+	switch style {
+	case Info:
+		return ui.button().Copy().Background(ui.Theme.Normal.Cyan).Foreground(ui.Theme.Primary.Background).SetString(body)
+	case Warn:
+		return ui.button().Copy().Background(ui.Theme.Bright.Yellow).Foreground(ui.Theme.Primary.Background).SetString(body)
+	case Error:
+		return ui.button().Copy().Background(ui.Theme.Bright.Yellow).Foreground(ui.Theme.Primary.Background).SetString(body)
+	case Success:
+		return ui.button().Copy().Background(ui.Theme.Bright.Green).Foreground(ui.Theme.Primary.Foreground).SetString(body)
+	default:
+		return ui.button().SetString(body)
 	}
-	return ui.button().Render(body)
 }
 
 func (ui *UI) button() lipgloss.Style {
 	return lipgloss.NewStyle().
-		BorderStyle(lipgloss.RoundedBorder()).
-		Foreground(ui.Theme.Primary.Foreground).
-		Background(ui.Theme.Primary.Background).
 		Padding(0, 1).
 		MarginTop(1)
-}
-
-func (ui *UI) buttonActive() lipgloss.Style {
-	return lipgloss.NewStyle().
-		Foreground(ui.Theme.Primary.Background).
-		Background(ui.Theme.Primary.Foreground).
-		Padding(0, 1).
-		Margin(1)
 }

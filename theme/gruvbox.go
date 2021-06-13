@@ -20,13 +20,6 @@ var Gruvbox = Theme{
 		Foreground:    gruvboxFG,
 		DimForeground: lipgloss.Color("#a5abb6"),
 	},
-	Cursor: Cursor{
-		Text:   gruvboxBG,
-		Cursor: gruvboxFG,
-	},
-	Selection: Selection{
-		Background: lipgloss.Color("#4c566a"),
-	},
 	Normal: Normal{
 		Black:  lipgloss.Color("#3b4252"),
 		Blue:   gruvboxBlue,

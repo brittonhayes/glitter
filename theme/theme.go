@@ -5,27 +5,16 @@ import (
 )
 
 type Theme struct {
-	Primary   Primary   `json:"primary"`
-	Cursor    Cursor    `json:"cursor"`
-	Selection Selection `json:"selection"`
-	Normal    Normal    `json:"normal"`
-	Bright    Bright    `json:"bright"`
-	Dim       Dim       `json:"dim"`
+	Primary Primary `json:"primary"`
+	Normal  Normal  `json:"normal"`
+	Bright  Bright  `json:"bright"`
+	Dim     Dim     `json:"dim"`
 }
 
 type Primary struct {
 	Background    lipgloss.Color `json:"background"`
 	Foreground    lipgloss.Color `json:"foreground"`
 	DimForeground lipgloss.Color `json:"dim_foreground"`
-}
-
-type Cursor struct {
-	Text   lipgloss.Color `json:"text"`
-	Cursor lipgloss.Color `json:"cursor"`
-}
-
-type Selection struct {
-	Background lipgloss.Color `json:"background"`
 }
 
 type Normal struct {
