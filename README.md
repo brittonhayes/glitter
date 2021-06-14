@@ -3,6 +3,9 @@
 > UI components + themes for [lipgloss](https://github.com/charmbracelet/lipgloss), 
 > [glamour](https://github.com/charmbracelet/glamour), and [bubbletea](https://github.com/charmbracelet/bubbletea)
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/brittonhayes/glitter.svg)](https://pkg.go.dev/github.com/brittonhayes/glitter)
+[![Go Report Card](https://goreportcard.com/badge/github.com/brittonhayes/glitter)](https://goreportcard.com/report/github.com/brittonhayes/glitter)
+
 <img src="assets/logo_w_bg.png" width="315" alt="Glitter Logo"><br>
 
 

@@ -5,47 +5,52 @@ import (
 )
 
 const (
-	gruvboxBG      = lipgloss.Color("#2e3440")
-	gruvboxFG      = lipgloss.Color("#d8dee9")
-	gruvboxRed     = lipgloss.Color("#bf616a")
-	gruvboxGreen   = lipgloss.Color("#a3be8c")
-	gruvboxBlue    = lipgloss.Color("#81a1c1")
+	gruvboxBG      = lipgloss.Color("#282828")
+	gruvboxFG      = lipgloss.Color("#EBDBB2")
+	gruvboxRed     = lipgloss.Color("#CC241D")
+	gruvboxGreen   = lipgloss.Color("#98971A")
+	gruvboxBlue    = lipgloss.Color("#458588")
 	gruvboxYellow  = lipgloss.Color("#ebcb8b")
-	gruvboxMagenta = lipgloss.Color("#b48ead")
+	gruvboxMagenta = lipgloss.Color("#B16286")
+	gruvboxCyan    = lipgloss.Color("#689D6A")
+	gruvboxWhite   = lipgloss.Color("#A89984")
 )
 
+// Gruvbox is a lipgloss mapping of the
+// Gruvbox color scheme
 var Gruvbox = Theme{
 	Primary: Primary{
 		Background:    gruvboxBG,
 		Foreground:    gruvboxFG,
-		DimForeground: lipgloss.Color("#a5abb6"),
+		DimForeground: lipgloss.Color("#928374"),
 	},
 	Normal: Normal{
-		Black:  lipgloss.Color("#3b4252"),
+		Black:  gruvboxBG,
 		Blue:   gruvboxBlue,
-		Cyan:   lipgloss.Color("#88c0d0"),
+		Cyan:   gruvboxCyan,
 		Green:  gruvboxGreen,
 		Red:    gruvboxRed,
-		White:  lipgloss.Color("#e5e9f0"),
+		White:  gruvboxWhite,
 		Yellow: gruvboxYellow,
 	},
 	Bright: Bright{
-		Black:   lipgloss.Color("#4c566a"),
-		Blue:    gruvboxBlue,
-		Cyan:    lipgloss.Color("#8fbcbb"),
+		Black:   lipgloss.Color("#282828"),
+		Blue:    lipgloss.Color("#83A598"),
+		Cyan:    lipgloss.Color("#8EC07C"),
 		Green:   gruvboxGreen,
 		Magenta: gruvboxMagenta,
 		Red:     gruvboxRed,
-		White:   lipgloss.Color("#eceff4"),
+		White:   lipgloss.Color("#EBDBB2"),
+		Yellow:  gruvboxYellow,
 	},
 	Dim: Dim{
 		Black:   lipgloss.Color("#373e4d"),
-		Red:     lipgloss.Color("#94545d"),
-		Green:   lipgloss.Color("#809575"),
-		Yellow:  lipgloss.Color("#b29e75"),
 		Blue:    lipgloss.Color("#68809a"),
-		Magenta: lipgloss.Color("#8c738c"),
 		Cyan:    lipgloss.Color("#6d96a5"),
-		White:   lipgloss.Color("#aeb3bb"),
+		Green:   lipgloss.Color("#809575"),
+		Magenta: lipgloss.Color("#8c738c"),
+		Red:     lipgloss.Color("#94545d"),
+		White:   lipgloss.Color("#928374"),
+		Yellow:  lipgloss.Color("#b29e75"),
 	},
 }

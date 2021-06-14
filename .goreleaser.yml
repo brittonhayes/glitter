@@ -1,0 +1,20 @@
+release:
+  github:
+    owner: brittonhayes
+    name: glitter
+  # If set to auto, will mark the release as not ready for production
+  # in case there is an indicator for this in the tag e.g. v1.0.0-rc1
+  # If set to true, will mark the release as not ready for production.
+  # Default is false.
+  prerelease: auto
+
+  # Header for the release body.
+  # Defaults to empty.
+  header: |
+    ## Glitter Release  ✨🚀
+
+  # Footer for the release body.
+  # Defaults to empty.
+  footer: |
+    [![Go Reference](https://pkg.go.dev/badge/github.com/brittonhayes/glitter.svg)](https://pkg.go.dev/github.com/brittonhayes/glitter)
+
