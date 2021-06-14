@@ -6,7 +6,7 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/brittonhayes/glitter.svg)](https://pkg.go.dev/github.com/brittonhayes/glitter)
 [![Go Report Card](https://goreportcard.com/badge/github.com/brittonhayes/glitter)](https://goreportcard.com/report/github.com/brittonhayes/glitter)
 
-<img src="assets/logo_w_bg.png" width="315" alt="Glitter Logo"><br>
+<img src="assets/logo_w_bg.png" width="400" alt="Glitter Logo"><br>
 
 
 ## Usage
@@ -28,7 +28,7 @@ func main() {
     ui := glitter.NewUI(theme.Monokai)
     
     // Create a button and mark it as active
-    btn := ui.Button("hello there", glitter.Info)
+    btn := ui.Button("hello there", style.Info)
     
     // Render the button!
     fmt.Println(btn)
@@ -51,12 +51,12 @@ func main() {
 	)
 
 	// Print the banner
-	fmt.Println(banner.String())
+	fmt.Println(banner)
 
 	// Print the code comment
-	fmt.Println(comment.String())
+	fmt.Println(comment)
 
 	// Print the shell prompt
-	fmt.Println(prefix.String(), prompt.String())
+	fmt.Println(prefix, prompt)
 }
 ```

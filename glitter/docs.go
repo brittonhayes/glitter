@@ -14,5 +14,4 @@
 //
 // Buttons, Banners, Comments, Prompts + More
 //
-//
 package glitter

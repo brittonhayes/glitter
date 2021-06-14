@@ -16,10 +16,10 @@ func main() {
 
 	// Create a few UI elements
 	var (
-		btn            = ui.Button("Info", glitter.Info)
-		btnSuccess     = ui.Button("Success", glitter.Success)
-		btnWarn        = ui.Button("Warn", glitter.Warn)
-		btnError       = ui.Button("Error", glitter.Error)
+		btn            = ui.Button("Info", style.Info)
+		btnSuccess     = ui.Button("Success", style.Success)
+		btnWarn        = ui.Button("Warn", style.Warn)
+		btnError       = ui.Button("Error", style.Error)
 		italics        = ui.Italicize("Some italicized text")
 		borderTab      = ui.Border("Tab Border", style.Tab)
 		borderRound    = ui.Border("Rounded Border", style.Rounded)

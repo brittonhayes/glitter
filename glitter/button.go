@@ -1,45 +1,21 @@
 package glitter
 
 import (
+	"github.com/brittonhayes/glitter/style"
 	"github.com/charmbracelet/lipgloss"
-)
-
-// ButtonStyle maps
-// each button aesthetic to
-// an integer
-type ButtonStyle int
-
-const (
-	// Info is a button with a
-	// primary foreground color
-	Info ButtonStyle = iota
-
-	// Warn is a button with a
-	// yellow to indicate an issue
-	Warn
-
-	// Error is a button with a
-	// red color to indicate a critical
-	// problem
-	Error
-
-	// Success is a button with a
-	// green color to indicate
-	// everything is good
-	Success
 )
 
 // Button is a button shaped UI element with a few different
 // style options
-func (ui *UI) Button(body string, style ButtonStyle) lipgloss.Style {
-	switch style {
-	case Info:
+func (ui *UI) Button(body string, buttonStyle style.ButtonStyle) lipgloss.Style {
+	switch buttonStyle {
+	case style.Info:
 		return ui.button().Copy().Background(ui.Theme.Normal.Cyan).Foreground(ui.Theme.Primary.Background).SetString(body)
-	case Warn:
+	case style.Warn:
 		return ui.button().Copy().Background(ui.Theme.Bright.Yellow).Foreground(ui.Theme.Primary.Background).SetString(body)
-	case Error:
+	case style.Error:
 		return ui.button().Copy().Background(ui.Theme.Bright.Red).Foreground(ui.Theme.Primary.Background).SetString(body)
-	case Success:
+	case style.Success:
 		return ui.button().Copy().Background(ui.Theme.Bright.Green).Foreground(ui.Theme.Primary.Background).SetString(body)
 	default:
 		return ui.button().SetString(body)

@@ -1,6 +1,5 @@
 before:
   hooks:
-    # You may remove this if you don't use go modules.
     - go mod download
 builds:
   - env:
@@ -20,13 +19,3 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
-
-release:
-  github:
-    owner: brittonhayes
-    name: glitter
-  prerelease: auto
-  header: |
-    ## Glitter Release  ✨🚀
-  footer: |
-    [![Go Reference](https://pkg.go.dev/badge/github.com/brittonhayes/glitter.svg)](https://pkg.go.dev/github.com/brittonhayes/glitter)
