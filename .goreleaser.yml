@@ -18,3 +18,5 @@ release:
   footer: |
     [![Go Reference](https://pkg.go.dev/badge/github.com/brittonhayes/glitter.svg)](https://pkg.go.dev/github.com/brittonhayes/glitter)
 
+builds:
+  skip: true
