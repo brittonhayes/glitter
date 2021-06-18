@@ -6,7 +6,6 @@ import (
 	"github.com/charmbracelet/lipgloss"
 )
 
-
 // Prompt is a terminal font that allows for a custom prefix
 // and command body
 //

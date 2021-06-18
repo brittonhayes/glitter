@@ -11,6 +11,7 @@ import (
 func main() {
 	// Create a new glitter UI and select a theme
 	ui := glitter.NewUI(theme.Nord)
+	//ui := glitter.NewUI(theme.OneBit)
 	// ui := glitter.NewUI(theme.Gruvbox)
 	// ui := glitter.NewUI(theme.Monokai)
 
