@@ -24,5 +24,6 @@ func (ui *UI) Button(body string, buttonStyle style.ButtonStyle) lipgloss.Style 
 
 func (ui *UI) button() lipgloss.Style {
 	return lipgloss.NewStyle().
-		Padding(0, 1)
+		MaxWidth(30).
+		Padding(0, style.XS.Size())
 }
