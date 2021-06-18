@@ -7,7 +7,7 @@ import (
 const (
 	nordBG     = lipgloss.Color("#2e3440")
 	nordWhite  = lipgloss.Color("#e5e9f0")
-	nordDimFG  = lipgloss.Color("#d8dee9")
+	nordDimFG  = lipgloss.Color("#4c566a")
 	nordRed    = lipgloss.Color("#bf616a")
 	nordGreen  = lipgloss.Color("#a3be8c")
 	nordBlue   = lipgloss.Color("#5e81ac")

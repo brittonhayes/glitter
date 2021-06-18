@@ -10,9 +10,9 @@ import (
 
 func main() {
 	// Create a new glitter UI and select a theme
-	// ui := glitter.NewUI(theme.Nord)
+	ui := glitter.NewUI(theme.Nord)
 	// ui := glitter.NewUI(theme.Gruvbox)
-	ui := glitter.NewUI(theme.Monokai)
+	// ui := glitter.NewUI(theme.Monokai)
 
 	// Create a few UI elements
 	var (

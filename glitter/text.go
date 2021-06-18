@@ -14,3 +14,11 @@ func (ui *UI) Italicize(body string) lipgloss.Style {
 		SetString(body)
 }
 
+// Accent highlights a text element as important
+// by setting it bold and bright cyan
+func (ui *UI) Accent(body string) lipgloss.Style {
+	return lipgloss.NewStyle().
+		Bold(true).
+		Foreground(ui.Theme.Bright.Cyan).
+		SetString(body)
+}
